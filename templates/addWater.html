@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+<link rel="stylesheet" href="/static/style.css">
+    <title>Параметры чайника</title>
+</head>
+    <div class="kettle-state">
+        <p><b>Состояние чайника: выключен</b></p>
+    <p id="p-params">Параметры заданы!</p>
+    <form method="post">
+        <label for="water_volume"></label>
+        <input type="number" name="water_volume" id="water_volume" step="0.1" min="0.1"
+               max={{ max_volume }} required placeholder="Объем воды в литрах (не больше {{ max_volume }})"><br>
+        <input class="btn-ind" id="turn-on" type="submit" value="Включить">
+
+        <a href="/" class="btn btn-home">Перейти на главную страницу</a>
+    </form>
+    </div>
+{% endblock %}

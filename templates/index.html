@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <head>
+    <link rel="stylesheet" href="/static/style.css">
+        <title>Параметры чайника</title>
+    </head>
+    <div class="kettle-state">
+        <p><b>Состояние чайника: выключен</b></p>
+        <p>Необходимо задать параметры!</p>
+
+        <form method="post">
+        <input class="btn-ind" id="btn-ind" type="submit" value="Задать параметры">
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <head>
+<link rel="stylesheet" href="/static/style.css">
+    <title>Чайник включен</title>
+</head>
+ <script>
+   setInterval(function()
+   {
+   $('#cur_temp').load(document.URL +  ' #cur_temp');
+   }, 1000)
+ </script>
+    <div class="kettle-parameters" id="on">
+    <p><b>Состояние чайника: включен</b></p>
+        <p>Температура воды: {{ cur_temp }}°C</p>
+    <form method="POST">
+        <input type="submit" class="btn-ind" name="submit-button" value="Выключить"/>
+        <input type="submit" class="btn-ind" name="submit-button" value="Остановить"/>
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+<link rel="stylesheet" href="/static/style.css">
+    <title>Параметры чайника</title>
+</head>
+
+<h2 id="kettle-h2">Параметры чайника</h2>
+<form method="post">
+    <label for="power"></label>
+    <input type="number" name="power" id="power" class="kettle-parameters" step="1" min="1" max="10000"
+           required placeholder="Мощность чайника в Ваттах"><br>
+    <label for="max_volume"></label>
+    <input type="number" name="max_volume" id="max_volume" class="kettle-parameters" step="0.1" min="0" max="10.0"
+           required placeholder="Объем чайника в литрах"><br>
+    <label for="start_temp"></label>
+    <input type="number" name="start_temp" id="start_temp" class="kettle-parameters" step="0.1" min="0" max="99"
+           required placeholder="Начальная температура воды в °C"><br>
+    <label for="end_temp"></label>
+    <input type="number" name="end_temp" id="end_temp" class="kettle-parameters" step="0.1" min="1" max="100"
+           required placeholder="Конечная температура воды в °C"><br>
+    <input class="btn-ind" id="btn-params" type="submit" value="OK">
+</form>
+{% endblock %}
+

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+        <title>Параметры чайника</title>
+    </head>
+    <div class="kettle-parameters" id="off">
+        <p><b>Состояние чайника: остановлен</b></p>
+        <p>Температура воды: {{ cur_temp }} °C</p>
+        <p>Время работы в секундах: {{ time_delta }}</p>
+        <form method="POST">
+            <input type="submit" class="btn-ind" name="submit-button" value="Включить"/>
+            <input type="submit" class="btn-ind" name="submit-button" value="Выключить"/>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,55 @@
+.body {
+    align-content: center;
+}
+.kettle-parameters {
+    color: black;
+    margin-top: 5px;
+    align-content: center;
+    margin-left: 500px;
+    font-size: 18px;
+    height: 36px;
+    width: 350px;
+}
+#kettle-h2 {
+    margin-left: 540px;
+    margin-top: 200px;
+    font-size: 18px;
+}
+
+.btn-ind{
+    margin-top: 10px;
+    background-color: greenyellow;
+    width: auto;
+}
+
+#btn-ind {
+    margin-left: 45px;
+}
+
+#btn-params {
+    margin-left: 650px;
+}
+
+#turn-on{
+    margin-left: 0px;
+}
+
+#water_volume {
+    font-size: 18px;
+    height: 36px;
+    width: 350px;
+}
+
+.kettle-state {
+    margin-top: 250px;
+    margin-left: 500px;
+    font-size: 18px;
+}
+
+#on {
+    margin-top: 300px;
+}
+
+#off{
+    margin-top: 300px;
+}
